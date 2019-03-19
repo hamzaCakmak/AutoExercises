@@ -1,4 +1,4 @@
-# AutoExercises
+# Automata Theory
 https://hamzacakmak.github.io/AutoExercises/
 
 BLM 320
