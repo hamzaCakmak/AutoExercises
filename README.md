@@ -7,6 +7,6 @@ ClassWorks
 1. [NFA](https://hamzacakmak.github.io/AutoExercises/CW2)
 2. [Regular Expressions](https://hamzacakmak.github.io/AutoExercises/RegExp)
 3. [CFG for Palindrom](https://hamzacakmak.github.io/AutoExercises/CFGPalindrome)
-
+4. [Recursive-descent Parser](https://hamzacakmak.github.io/AutoExercises/CW5/Expression.html)
 HomeWorks
 1. [HW-1](https://hamzacakmak.github.io/AutoExercises/HW1)
