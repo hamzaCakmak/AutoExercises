@@ -11,8 +11,8 @@ ClassWorks
 5. [microJ Program Diamond Pattern Program](https://hamzacakmak.github.io/AutoExercises/CW7/microJ3.html)
 
 HomeWorks
-1. [HW-1](https://hamzacakmak.github.io/AutoExercises/HW1)
-2. [Modifying microJ](https://hamzacakmak.github.io/AutoExercises/HW3/microJ1.html)
+1. [HW-1 RegExp](https://hamzacakmak.github.io/AutoExercises/HW1)
+2. [HW-3 Modifying microJ](https://hamzacakmak.github.io/AutoExercises/HW3/microJ1.html)
 
 Project
 1. [CW9 - First version](https://hamzacakmak.github.io/AutoExercises/CW9/CFG.html)
