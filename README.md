@@ -12,6 +12,7 @@ ClassWorks
 
 HomeWorks
 1. [HW-1](https://hamzacakmak.github.io/AutoExercises/HW1)
+2. [Modifying microJ](https://hamzacakmak.github.io/AutoExercises/HW3/microJ1.html)
 
 Project
 1. [CW9 - First version](https://hamzacakmak.github.io/AutoExercises/CW9/CFG.html)
