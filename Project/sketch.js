@@ -27,3 +27,25 @@ function sample(rules,s,elemID){
 	console.log(result);
 }
 
+ var imgList = [["example1/PNG0.png", "example1/PNG1.png", "example1/PNG2.png", "example1/PNG3.png","example1/PNG4.png",
+					"example1/PNG5.png","example1/PNG6.png","example1/PNG7.png"], 
+                  ["example2/PNG0.png", "example2/PNG1.png", "example2/PNG2.png", "example2/PNG3.png","example2/PNG4.png"]];
+				  
+				  
+var i = 0; var j = 0;
+function nextImg(s) {
+  if (s == 1) {
+	if (++i < imgList[s - 1].length)
+	  document.getElementById("example1").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][i] + '">'
+	}
+  else {
+	if (++j < imgList[s - 1].length)
+	  document.getElementById("example2").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][j] + '" height="632" width="420">'
+	}
+  }
+function reset() {
+  i = 0;
+  j = 0;
+  document.getElementById("example1").innerHTML = "";
+  document.getElementById("example2").innerHTML = "";
+}
