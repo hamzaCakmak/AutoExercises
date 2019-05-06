@@ -173,12 +173,12 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <div class="w3-center w3-padding-64" id="contact">
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Tree</span>
     </div>
-	Sample Parse Tree <br>
+	<b>Sample Parse Tree</b> <br><br>
     Lets take these words as examples. <br> <br>
 	
 	w = abaaba <br> <br>
 	For this rule our Grammar instances are like these: <br>
-	V&ensp; = &ensp;{S}, &emsp;  T &ensp;= &ensp;{a,&ensp; b},&emsp;  P = S -> ε&ensp; | &ensp;aSa&ensp; | &ensp;bSb,&emsp; S&ensp; =&ensp; S  <br> <br>
+	V&ensp; = &ensp;{S}, &emsp;  T &ensp;= &ensp;{a,&ensp; b},&emsp;  P = S -> ε&ensp; | &ensp;aSa&ensp; | &ensp;bSb,&emsp; <br>S&ensp; =&ensp;  S  <br> <br>
 	<div id="example2">
 	<img src="img/example2/PNG20.png">
 	</div>
@@ -186,7 +186,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 	<button onclick="reset();">Reset</button> <br><br>
 	w = the wolf captured by the lion <br> <br>
 	For this bunch of rules our Grammar instances are like these: <br>
-	V = {S,&ensp; NP,&ensp; VP,&ensp;N, &ensp;V}, &emsp; 
+	V = {S,&ensp; NP,&ensp; VP,&ensp;N, &ensp;V}, &emsp; <br>
 	T = {the,&ensp; by, &ensp;bear, &ensp;lion, &ensp;rabbit,&ensp; wolf,&ensp; beaten, &ensp;haunted,&ensp; captured, &ensp;killed}, &emsp; <br>
 	P &ensp;=  &ensp; S &ensp; -> NP&ensp; VP, <br>
 		  NP &ensp; ->&ensp; the&ensp; N, <br> 
@@ -195,8 +195,8 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 		  V &ensp; -> &ensp;beaten &ensp;|&ensp; haunted &ensp;| &ensp;captured&ensp; |&ensp; killed <br>
 		  S &ensp;= &ensp;S
 	
-	<div id="example1">
-	<img src="img/example1/PNG0.png">
+	<div id="example1" >
+	<img src="img/example1/PNG0.png" style = "width: 100% !important" >
 	</div>
 	<button onclick="nextImg(1);">Next Step</button>
 	<button onclick="reset();">Reset</button> <br> <br>

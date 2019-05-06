@@ -36,11 +36,11 @@ var i = 0; var j = 0;
 function nextImg(s) {
   if (s == 1) {
 	if (++i < imgList[s - 1].length)
-	  document.getElementById("example1").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][i] + '">'
+	  document.getElementById("example1").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][i] + '" style = "width: 100% !important">'
 	}
   else {
 	if (++j < imgList[s - 1].length)
-	  document.getElementById("example2").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][j] + '">'
+	  document.getElementById("example2").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][j] + '" style = "width: 100% !important">'
 	}
   }
 function reset() {
