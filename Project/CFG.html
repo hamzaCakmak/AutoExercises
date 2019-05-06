@@ -48,50 +48,24 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
   <!-- Slideshow -->
   <center> 
-    <div class="w3-display-container mySlides">
-     <img src="img/parseTree.png" style="width:50%">
+    <div class="w3-display-container mySlide">
+	
+     <img src="images/parseTree.png" style="width:50%">
     </div>
 </center>
- 
-  <!-- Grid 
-  <div class="w3-row w3-container">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Definition</span>
-    </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3>Design</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3>Branding</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3>Consultation</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-      <h3>Promises</h3>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    </div>
-  </div>
--->
 
   <!-- Grid -->
   <div class="w3-row-padding" id="plans">
     <div class="w3-center w3-padding-64 ">
        <center> <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Draw with rules</span> </center>
     </div>
-
+    <center>
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
 	  <li class="w3-grey w3-xlarge w3-padding-32">Simple</li>
 	  <form>
 	  <br>
-	  <p>S -> ε | aSa | bSb</p>
+	  <p><b>S</b> -> ε | aSa | bSb</p>
 	  </form>
        <li class="w3-padding-16">	
             </li>
@@ -99,18 +73,18 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
             <a>  <button onclick="sample(rule1,'#S#','sampleOfSimple');" class="w3-button w3-grey w3-padding-large">Create sample</button> <a>
         </li>
       </ul>
-    </div>
+    </div></center>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-dark-grey w3-xlarge w3-padding-32">Normal</li>
 	  <form>
 	  <br>
-	  <p>S -> NP | VP </p>
-	  <p>NP -> the N</p>
-	  <p>VP -> V | V NP</p>
-	  <p>N -> bear | lion | rabbit | wolf</p>
-	  <p>V -> beaten | haunted | scared | escaped</p>
+	  <p><b>S</b> -> NP VP </p>
+	  <p><b>NP</b> -> the N</p>
+	  <p><b>VP</b> -> V | V by NP</p>
+	  <p><b>N</b> -> bear | lion | rabbit | wolf</p>
+	  <p><b>V</b> -> beaten | haunted | captured | killed</p>
 	  </form>
         <li class="w3-light-grey w3-padding-24">
           <a> <button  onclick="sample(rule2,'#S#','sampleOfNormal');" class="w3-button w3-dark-grey w3-padding-large">Create sample</button></a>
@@ -118,10 +92,16 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       </ul>
     </div>
 
-    <div class="w3-third w3-margin-bottom">
+    <div class="w3-third w3-margin-bottom" >
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-black w3-xlarge w3-padding-32">Complicate</li>
-
+	  <form>
+	  <br>
+	  <p><b>name</b> -> Aragorn | Sam | Legolas | Mithrandir | Faramir | Frodo | Gimli </p>
+	  <p><b>creature</b> -> dragon | warg | great spider | great eagle | werewolf | giant | troll | fellbeast</p>
+	  <p><b>mood</b> -> vexed | indignant | impassioned | wistful | astute | courteous | frightened</p>
+	  <p><b>story</b> -> <b>name</b> traveled with his pet <b>creature</b>. <b>name</b> was never <b>mood</b>, for the <b>creature</b> was always too <b>mood</b>.</p>
+	  </form>
         <li class="w3-light-grey w3-padding-24">
             <a>    <button  onclick="sample(rule3,'#origin#','sampleOfComplicate');" class="w3-button w3-black w3-padding-large">Create sample</button> </a>
         </li>
@@ -168,7 +148,10 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <div class="w3-center w3-padding-64" id="contact">
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Tree</span>
     </div>
-      <button type="submit" class="w3-button w3-block w3-black">Send</button>
+	Sample Parse Tree <br>
+    Lets take this word as an example. <br>
+	w = the wolf captured by the lion <br>
+	w = abaaba
     </form>
   
   </div>
