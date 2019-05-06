@@ -40,7 +40,7 @@ function nextImg(s) {
 	}
   else {
 	if (++j < imgList[s - 1].length)
-	  document.getElementById("example2").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][j] + '" height="632" width="420">'
+	  document.getElementById("example2").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][j] + '">'
 	}
   }
 function reset() {
