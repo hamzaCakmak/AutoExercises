@@ -29,7 +29,7 @@ function sample(rules,s,elemID){
 
  var imgList = [["example1/PNG0.png", "example1/PNG1.png", "example1/PNG2.png", "example1/PNG3.png","example1/PNG4.png",
 					"example1/PNG5.png","example1/PNG6.png","example1/PNG7.png"], 
-                  ["example2/PNG0.png", "example2/PNG1.png", "example2/PNG2.png", "example2/PNG3.png","example2/PNG4.png"]];
+                  ["example2/PNG20.png", "example2/PNG21.png", "example2/PNG22.png", "example2/PNG23.png","example2/PNG24.png"]];
 				  
 				  
 var i = 0; var j = 0;
