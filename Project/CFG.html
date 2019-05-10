@@ -23,24 +23,24 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-large w3-black" >
+  <div class="w3-row w3-large w3-light-grey" >
     <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">What is CFG?</a>
+      <a href="#def" class="w3-button w3-block">What is CFG?</a>
     </div>
     <div class="w3-col s3">
-      <a href="#plans" class="w3-button w3-block">Rules</a>
+      <a href="#ruleNsamples" class="w3-button w3-block">Rules & Samples</a>
     </div>
     <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block">Samples</a>
+      <a href="#draw" class="w3-button w3-block">Draw</a>
+    </div>
+	    <div class="w3-col s3">
+      <a href="#ref" class="w3-button w3-block">References</a>
     </div> 
-    <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block">Draw</a>
-    </div>
   </div>
 </div>
 
 <!-- Content -->
-<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px; padding:20px">
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px; padding:20px" id="def">
 
   <div class="w3-panel">
     <center><h1><b>CFG</b></h1></center>
@@ -80,7 +80,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
  
 
   <!-- Grid -->
-  <div class="w3-row-padding" id="plans">
+  <div class="w3-row-padding" id="ruleNsamples">
     <div class="w3-center w3-padding-64 ">
        <center> <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Draw with rules</span> </center>
     </div>
@@ -88,14 +88,17 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
 	  <li class="w3-grey w3-xlarge w3-padding-32">Simple</li>
-	  <form>
-	  <br>
+	  <form style="font-size:x-large">
+	  <br />&nbsp;<br /><br>
 	  <p><b>S</b> -> ε | aSa | bSb</p>
+	  <br />&nbsp;<br />
 	  </form>
        <li class="w3-padding-16">	
             </li>
         <li class="w3-light-grey w3-padding-24">
-            <a>  <button onclick="sample(rule1,'#S#','sampleOfSimple');" class="w3-button w3-grey w3-padding-large">Create sample</button> <a>
+            <a>  <button onclick="sample(rule1,'#S#','sampleOfSimple');" class="w3-button w3-grey w3-padding-large">Create sample</button> 
+			<li class="w3-white w3-xlarge w3-padding-32" id="sampleOfSimple">Click button for sample.</li>
+			<a>
         </li>
       </ul>
     </div></center>
@@ -104,16 +107,21 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-dark-grey w3-xlarge w3-padding-32">Normal</li>
 	  <form>
-	  <br>
+	  
+	  <br />&nbsp;<br />
 	  <p><b>S (sentence)</b> -> NP VP </p>
 	  <p><b>NP (noun phrase)</b> -> the N</p>
 	  <p><b>VP (verb phrase)</b> -> V | V by NP</p>
 	  <p><b>N (noun)</b> -> bear | lion | rabbit | wolf</p>
 	  <p><b>V (verb)</b> -> beaten | haunted | captured | killed</p>
+	  <br />&nbsp;<br />
 	  </form>
         <li class="w3-light-grey w3-padding-24">
-          <a> <button  onclick="sample(rule2,'#S#','sampleOfNormal');" class="w3-button w3-dark-grey w3-padding-large">Create sample</button></a>
-        </li>
+          <a> <button  onclick="sample(rule2,'#S#','sampleOfNormal');" class="w3-button w3-dark-grey w3-padding-large">Create sample</button>
+		  <li class="w3-white w3-xlarge w3-padding-32" id="sampleOfNormal">Click button for sample.</li>
+		  </a>
+			
+		</li>
       </ul>
     </div>
 
@@ -121,56 +129,25 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-black w3-xlarge w3-padding-32">Complicate</li>
 	  <form>
-	  <br>
 	  <p><b>name</b> -> Aragorn | Sam | Legolas | Mithrandir | Faramir | Frodo | Gimli </p>
 	  <p><b>creature</b> -> dragon | warg | great spider | great eagle | werewolf | giant | troll | fellbeast</p>
 	  <p><b>mood</b> -> vexed | indignant | impassioned | wistful | astute | courteous | frightened</p>
 	  <p><b>story</b> -> <b>name</b> traveled with his pet <b>creature</b>. <b>name</b> was never <b>mood</b>, for the <b>creature</b> was always too <b>mood</b>.</p>
+	  <br>
 	  </form>
         <li class="w3-light-grey w3-padding-24">
-            <a>    <button  onclick="sample(rule3,'#origin#','sampleOfComplicate');" class="w3-button w3-black w3-padding-large">Create sample</button> </a>
+            <a>    
+			<button  onclick="sample(rule3,'#origin#','sampleOfComplicate');" class="w3-button w3-black w3-padding-large">
+			Create sample</button>
+			<li class="w3-white w3-xlarge w3-padding-32" id="sampleOfComplicate">Click button for sample.</li>
+			</a>
         </li>
       </ul>
     </div>
   </div>
 
-  <!-- Grid -->
- <div class="w3-row-padding" id="about">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Samples</span>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3><center>Simple</h3>
-		  <li class="w3-white w3-xlarge w3-padding-32" id="sampleOfSimple">Click button for sample.</li>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3><center>Normal</h3>
-		  <li class="w3-white w3-xlarge w3-padding-32" id="sampleOfNormal">Click button for sample.</li>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <div class="w3-card-4">
-        <div class="w3-container">
-          <h3><center>Complicate</h3>
-		  <li class="w3-white w3-xlarge w3-padding-32" id="sampleOfComplicate">Click button for sample.</li>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
   <!-- Contact -->
-  <div class="w3-center w3-padding-64" id="contact">
+  <div class="w3-center w3-padding-64" id="draw">
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Tree</span>
     </div>
 	<b>Sample Parse Tree</b> <br><br>
@@ -207,7 +184,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 
 <!-- Footer -->
 
-<footer class="w3-container w3-padding-32 w3-black w3-center" style="height:250px">
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center" style="height:250px" id="ref">
   <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <p>References: <br>
   <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Parse_Tree_Derivations.svg/631px-Parse_Tree_Derivations.svg.png" title="W3.CSS" target="_blank" class="w3-hover-text-green"> 
