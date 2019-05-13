@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://maeyler.github.io/Auto/work/RegExp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <title>Regular Expressions </title>
+  <style>
+  /* pre { border: solid 1px } */
+    #pat { width: 90px; }
+    #inp { width: 270px; }
+    .found { color: #F60; }
+  </style>
+</head>
+
+<body>
+<h2 id="title">Regular Expressions</h2>
+
+<p>
+Pattern <input type="text" id="pat" onkeyup="checkRE()">  
+<select id="menu" onchange="setValues()">
+<option>Mathematical Operation</option><option>HH:MM</option><option>Letter</option><option>Number</option><option>Suffix</option><option>x+letter
+</option></select> 
+</p>
+<p>
+Input <input type="text" id="inp" onkeyup="checkRE()">
+</p>
+<p id="out">Bugün 23/6/<span class="found">2018</span> saat 14</p>
+
+<hr>
+<b>Sample code</b>
+<pre id="sample">function setValues() {<br>    pat.value = ptrn[menu.selectedIndex];<br>    inp.value = word[menu.selectedIndex];<br>    checkRE();<br>}<br>function checkRE() {<br>    if (pat.value &amp;&amp; inp.value) {<br>        const exp = new RegExp(pat.value,'g');<br>        const str = "&lt;span class=found&gt;$&amp;&lt;/span&gt;";<br>        out.innerHTML = inp.value.replace(exp, str);<br>    }<br>}</pre>
+<hr>
+<p>Ref: <a href="https://emrahtema.github.io/Automata/regexp/EmrahTema_Regexp.html" target="ExternalDocument">Term project by Emrah Tema</a>
+</p>
+
+<script>
+"use strict";
+const ptrn = ["([-+]?[0-9]*\.?[0-9]+[\\/\\+\\-\\*])+([-+]?[0-9]*\.?[0-9]+)","([01]?[0-9]|2[0-3]):[0-5][0-9]","[a-z]", "[0-9]{4}", "d[iuü][km]", "x[a-z]"];
+const word = 
+    ["Ürünün her bir taksiti 250 TL'dir. 3000/12=250","8 Mart Cuma günü saat 14:30'da Sultanahmet Meydanında","Bir iki üç dört beş altı ", "Bugün 23/6/2018 saat 14",
+     "Geldim gördüm buldum...", "Excellent expression tax "];
+function setValues() {
+    pat.value = ptrn[menu.selectedIndex];
+    inp.value = word[menu.selectedIndex];
+    checkRE();
+}
+function checkRE() {
+    if (pat.value && inp.value) {
+        const exp = new RegExp(pat.value,'g');
+        const str = "<span class=found>$&</span>";
+        out.innerHTML = inp.value.replace(exp, str);
+    }
+}
+    sample.innerText = setValues.toString()+"\n"+checkRE.toString();
+    title.innerText = document.title; setValues();
+</script>
+
+
+
+</body></html>
