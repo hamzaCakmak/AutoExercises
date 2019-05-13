@@ -4,6 +4,7 @@ https://hamzacakmak.github.io/AutoExercises/
 BLM 320
 
 ClassWorks
+1. [DFA](https://hamzacakmak.github.io/AutoExercises/CW1/CW1.html)
 1. [NFA](https://hamzacakmak.github.io/AutoExercises/CW2)
 2. [Regular Expressions](https://hamzacakmak.github.io/AutoExercises/RegExp)
 3. [CFG for Palindrom](https://hamzacakmak.github.io/AutoExercises/CFGPalindrome)
