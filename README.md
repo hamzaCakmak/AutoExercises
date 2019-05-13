@@ -1,5 +1,5 @@
 # Automata Theory
-<pre>
+
 BLM 320
 
 ClassWorks
@@ -22,4 +22,4 @@ HomeWorks
 Project
 
 1. [Context-Free Grammar](https://hamzacakmak.github.io/AutoExercises/Project/CFG.html)
-</pre>
+
