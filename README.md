@@ -17,7 +17,7 @@ HomeWorks
 1. [HW-1 RegExp](https://hamzacakmak.github.io/AutoExercises/HW1/HW1.html)
 2. [HW-2 Adding Math Functions](https://hamzacakmak.github.io/AutoExercises/HW2/Expression.html)
 3. [HW-3 Modifying microJ](https://hamzacakmak.github.io/AutoExercises/HW3/microJ1.html)
-4. [HW-4 Final version](https://hamzacakmak.github.io/AutoExercises/)
+4. [HW-4 Final version](https://hamzacakmak.github.io/AutoExercises/HW4/CFG.html)
 
 Project
 
