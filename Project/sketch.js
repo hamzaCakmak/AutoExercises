@@ -27,25 +27,31 @@ function sample(rules,s,elemID){
 	console.log(result);
 }
 
- var imgList = [["example1/PNG0.png", "example1/PNG1.png", "example1/PNG2.png", "example1/PNG3.png","example1/PNG4.png",
-					"example1/PNG5.png","example1/PNG6.png","example1/PNG7.png"], 
-                  ["example2/PNG20.png", "example2/PNG21.png", "example2/PNG22.png", "example2/PNG23.png","example2/PNG24.png"]];
+ var imgList = [["img/example1/PNG0.png", "img/example1/PNG1.png", "img/example1/PNG2.png", "img/example1/PNG3.png","img/example1/PNG4.png",
+					"img/example1/PNG5.png","img/example1/PNG6.png","img/example1/PNG7.png"], 
+                  ["img/example2/PNG20.png", "img/example2/PNG21.png", "img/example2/PNG22.png", "img/example2/PNG23.png","img/example2/PNG24.png"]];
 				  
 				  
 var i = 0; var j = 0;
 function nextImg(s) {
   if (s == 1) {
-	if (++i < imgList[s - 1].length)
-	  document.getElementById("example1").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][i] + '" style = "width: 100% !important">'
+	if (++i < imgList[s - 1].length){
+			var pngURL = "";
+			pngURL = imgList[s-1][i];
+			document.getElementById("imgEx1").src = pngURL;
+		}
 	}
   else {
-	if (++j < imgList[s - 1].length)
-	  document.getElementById("example2").innerHTML = '<img id="endofpage" src="' + "img/" + imgList[s-1][j] + '">'
+	if (++j < imgList[s - 1].length){
+			var pngURL = "";
+			pngURL = imgList[s-1][j];
+			document.getElementById("imgEx2").src = pngURL;
+		}
 	}
   }
 function reset() {
   i = 0;
   j = 0;
-  document.getElementById("example1").innerHTML = "";
-  document.getElementById("example2").innerHTML = "";
+  document.getElementById("imgEx1").src = "img/example1/PNG0.png";
+  document.getElementById("imgEx2").src = "img/example2/PNG20.png";
 }
